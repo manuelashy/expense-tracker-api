@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import {
   userLoginValidator,
   userRegistrationValidator,
-} from "../Vallidators/user-validators.js";
+} from "../Validators/user-validators.js";
 
 export const registerUser = async (req, res) => {
   //Validate user information

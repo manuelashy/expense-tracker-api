@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(expenseRouter);
 app.use(userRouter);
 
-const port = 3800;
+const port = process.env.PORT || 3800;
 
 app.listen(port, () => {
   console.log(`server listening on ${port}`);
